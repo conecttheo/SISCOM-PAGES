@@ -1,0 +1,65 @@
+
+.img-logos {
+    width: 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0 auto;
+    padding: 0;
+}
+
+.siscom {
+    width: 5%;
+}
+
+#index {
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-1);
+    color: var(--branco);
+    text-align: center;
+    background-color: #517e9b;
+    margin: 40px auto 0; 
+    width: 20%;
+    padding: 65px;
+    border-radius: 36px;
+    opacity: 0.85;
+}
+
+.form-signin-heading {
+    margin-bottom: 40px;
+}
+
+#inputEmail, #inputPassword, #nome, #email {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: var(--fonte-1);
+    color: var(--branco);
+    text-align: center;
+    background-color: #022e50;
+}
+
+#btnEnviar {
+    background-color: #013f70;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    color: var(--branco);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 14px;
+    cursor: pointer;
+    border: 2px solid var(--branco);
+}
+
+#btnEnviar:hover {
+    background-color: #599ec3;
+    color: var(--branco);
+    transition : 694ms;
+}
+
+.dashboard {
+    display: flex;
+}

@@ -1,0 +1,68 @@
+<html>
+
+<head runat="server">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SisCom</title>
+	<link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/historico.css">
+	<meta name="author" content="Dione Gelton">
+	<link rel="shortcut icon" type="image/jpg" href="../ASSETS/img/logo_camara_icon.png" />
+	<script type="text/javascript" src="../js/script0.js"></script>
+	<script type="text/javascript" src="../js/script1.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/linways/table-to-excel@v1.0.4/dist/tableToExcel.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<section id="corpo">
+            <h2 class="titulo-home">
+                Sistema Interno - Secretaria de Comunicação 
+                <br>Câmara Municipal de Jacareí-SP</h2>
+                    <h3>HISTÓRICO DE PROTOCOLO DE MÍDIAS</h3>
+
+                    <table id="dg" class="easyui-datagrid" url="../funcoes/getDataProtocolos.php" toolbar="#toolbar"
+							pageSize="50" pagination="true" fitColumns="true" singleSelect="true"
+							style="width:101.3%;height:380px;">
+							<thead>
+								<tr>
+									<th field="id" align="center">Protocolo</th>
+									<th field="midia" align="center" width="40">Mídia</th>
+									<th field="nomeassessor" align="center" width="40">Assessor</th>
+									<th field="nomevereador" align="center" width="40">Vereador</th>
+									<th field="temalivre" align="center">Tema Livre</th>
+									<th field="defesaprojeto" align="center">Defesa de Projeto</th>
+									<th field="outros" align="center">Outros</th>
+									<th field="descricao" align="center" width="40">Descrição</th>
+									<th field="datahora" align="center">Data de Envio</th>
+									<th field="status" align="center">Status</th>
+									<th field="statusobservacao" align="center" width="40">Observação do Status</th>
+									<?php if ($_SESSION['perfil'] == "admin") {
+										echo ('<th field="editar" align="center">Editar</th><th field="excluir" align="center">Excluir</th>');
+									}
+									if (($_SESSION['perfil'] != "admin") && ($exibirBotao == "true")) {
+										echo ('<th field="editar" align="center">Editar</th>');
+									}
+									?>
+								</tr>
+							</thead>
+						</table>
+                        
+        </section>
+        <div class="icones">
+            <div class="icone">
+                <a href="../Pages/01-home.html"><img src="../ASSETS/img/VOLTAR_ICON.png" title="Voltar"></a>
+                <p class="textos-home">Voltar</p>
+            </div>
+            <div class="icone">
+                <a href="../Pages/05-protocolotipo.html"><img src="../ASSETS/img/NOVO-DOCUMENTO.png" class="icone-doc" title="Novo documento"></a>
+                <p class="textos-home texto-doc">Novo<br>Protocolo</p>
+            </div>
+            <div class="icone">
+                <a href="../funcoes/sair.php"><img src="../ASSETS/img/SAIR_ICON.png" title="Sair"></a>
+                <p class="textos-home">Sair</p>
+            </div>
+    </div>
+    </div>
+
+</body>

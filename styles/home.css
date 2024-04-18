@@ -1,0 +1,41 @@
+.home {
+    background-color: var(--azul-claro);
+    background-image: url(../ASSETS/img/foto-camara.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.img-logos {
+    width: 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0 auto;
+    padding: 0;
+}
+
+.siscom {
+    width: 5%;
+}
+
+.titulo-home{
+    color: var(--branco);
+}
+
+.icon-calendario {
+    margin-left: 70px;
+}
+
+.icones-home {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transform: scale(0.40);
+}  
