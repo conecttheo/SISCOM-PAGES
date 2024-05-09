@@ -7,12 +7,6 @@
     flex-direction: column;
 }
 
-h3 {
-    font-family: var(--fonte-1);
-    color: #397e9d;
-    font-size: 32px;
-}
-
 .btn-protocolo {
     display: flex;
     flex-direction: column;

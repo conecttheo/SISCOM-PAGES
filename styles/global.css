@@ -7,6 +7,7 @@
     --azul-1: #3f5a8d;
     --azul-2: #32b2b5;
     --vermelho: #ff0000;
+    --vermelho-escuro: #9d3939;
     --fonte-1: 'Open Sans';
 }
 * {
@@ -109,6 +110,13 @@ body {
 .icone:hover{
     transition : 245ms;
     scale: 1.2;
+}
+
+.sub-titulo{
+    font-family: var(--fonte-1);
+    color: #397e9d;
+    font-size: 32px;
+    font-weight: 800;
 }
 
 @media screen and (min-width:1024px) {
