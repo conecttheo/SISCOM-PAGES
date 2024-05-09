@@ -56,3 +56,14 @@ h3 {
     font-size: 14px;
     font-family: var(--fonte-1);
 }
+
+.texto__formulario {
+    font-size: 11.5px;
+}
+
+.box__textos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
