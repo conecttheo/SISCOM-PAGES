@@ -20,3 +20,14 @@
     font-size: 11.5px;
 }
 
+.texto__formulario-sm {
+    font-size: 9px;
+}
+
+.form-check-label {
+    display: block;
+}
+
+.box__textos {
+    display: flex;
+}

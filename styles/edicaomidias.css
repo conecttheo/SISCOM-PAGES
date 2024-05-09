@@ -3,6 +3,11 @@
     background-color: var(--vermelho-escuro);
     font-size: 32px;
     font-weight: 700;
-    padding: 2px 360px;
+    padding: 2px 320px;
     border-radius: 32px;
+}
+
+.sub-titulo-red {
+    color: var(--vermelho-escuro);
+    font-weight: 500;
 }

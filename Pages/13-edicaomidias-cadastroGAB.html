@@ -24,7 +24,76 @@
                 Sistema Interno - Secretaria de Comunicação
                 <br>Câmara Municipal de Jacareí-SP
             </h2>
-            <h3 class="sub-titulo">AUXÍLIO PARA SOLICITAÇÃO DE EDIÇÃO DE MÍDIAS</h3>
+            <h3 class="sub-titulo-red">AUXÍLIO PARA SOLICITAÇÃO DE EDIÇÃO DE MÍDIAS</h3>
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label h6">NOME DO ASSESSOR(A)</label>
+                        <input type="text" class="form-control shadow bg-body-tertiary rounded border border-secondary"
+                            id="exampleFormControlInput1">
+                    </div>
+
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label h6">PROPÓSITO DE USO</label>
+                        <select class="form-select shadow bg-body-tertiary rounded border border-secondary"
+                            id="floatingSelect" aria-label="Floating label select example">
+                            <option selected></option>
+                            <option value="1">Sessão Ordinária</option>
+                            <option value="2">Sessão Solene</option>
+                            <option value="3">Audiência Pública</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label h6">NOME DO ARQUIVO</label>
+                        <input type="text" class="form-control shadow bg-body-tertiary rounded border border-secondary"
+                            id="exampleFormControlInput1">
+                    </div>
+
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label h6">DATA A SER UTILIZADO</label>
+                        <input type="date" class="form-control shadow bg-body-tertiary rounded border border-secondary"
+                            id="exampleFormControlInput1">
+                    </div>
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label h6">TIPO DE MÍDIA</label>
+                        <select class="form-select shadow bg-body-tertiary rounded border border-secondary"
+                            id="floatingSelect" aria-label="Floating label select example">
+                            <option selected></option>
+                            <option value="1">Vídeo</option>
+                            <option value="2">Aúdio</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="my-4 container text-center">
+                    <label for="exampleFormControlTextarea1" class="form-label h6">DESCREVA ABAIXO, DETALHADAMENTE, A
+                        EDIÇÃO A REALIZAR NA MÍDIA</label>
+                    <br>
+                    <textarea class="form-control shadow bg-body-tertiary rounded border border-secondary"
+                    id="exampleFormControlTextarea1" rows="6" placeholder="Exemplos: 
+                    1- Retire o aúdio do vídeo 
+                    2- Realize o corte para utilização do tempo de “3 minutos e 30 segundos até 4 minutos de 05 segundos”. 
+                    3- Coloque a identificação na pessoa que aparece no tempo de 2 minutos e 3 segundos, com o nome de João da Silva, Estudante. 
+                    4- Aumentar o volume da Entrevista que ocorre no tempo de 4 minutos e 50 segundos."></textarea>
+                </div>
+
+                <a href="../Pages/14-edicaomidias-historicoGAB.html">
+                    <button type="button" class="btn btn-danger m-3">Enviar</button></a>
+
+                <div class="icones">
+                    <div class="icone">
+                        <a href="../funcoes/home.php"><img src="../ASSETS/img/VOLTAR_ICON.png" title="Voltar"></a>
+                        <p class="textos-home">Voltar</p>
+                    </div>
+                    <div class="icone">
+                        <a href="../funcoes/sair.php"><img src="../ASSETS/img/SAIR_ICON.png" title="Sair"></a>
+                        <p class="textos-home">Sair</p>
+                    </div>
+                </div>
         </section>
+
     </div>
+
 </body>
