@@ -1,0 +1,38 @@
+#corpo {
+    margin-top: 50px;
+}
+
+.container-botao {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-family: var(--fonte-1);
+    color: #397e9d;
+    font-size: 32px;
+}
+
+.btn-protocolo {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    background-color: #397e9d;
+    padding: 10px 60px;
+    border-radius: 12px;
+    transition : 1000ms;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px 40px;
+    text-decoration: none;
+}
+
+.btn-protocolo:hover{
+    transition : 994ms;
+    transform : translateY(-5px);
+    background-color: #87cddb;
+    color: #ffffff;
+    }

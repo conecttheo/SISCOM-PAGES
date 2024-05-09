@@ -22,11 +22,34 @@ body {
     background-position: absolute;
 }
 
+#corpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img-logos {
+    width: 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0 auto;
+    padding: 0;
+}
+
+.sicom {
+    width: 5%;
+}
+
 .titulo-home{
     padding: 25px;
     font-family: var(--fonte-1);
     font-weight: 800;
     font-size: 28px;
+    color: #505050;
+    margin: 50px;
 }
 .botoes {
     display: flex;
@@ -64,6 +87,7 @@ body {
     justify-content:center;
     align-items: center;
     transform: scale(0.60);
+    margin-top: 20px;
 
 }    
 .icone {
