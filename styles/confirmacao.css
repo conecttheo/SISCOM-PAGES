@@ -31,3 +31,7 @@
 .box__textos {
     display: flex;
 }
+
+.titulo-form {
+    margin-bottom: 10px;
+}
