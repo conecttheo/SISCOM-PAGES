@@ -1,6 +1,6 @@
 .titulo-confirmacao {
     color: var(--vermelho);
-    margin: 10px 25px;
+    margin: 25px 25px;
 }
 
 .box__confirm {
@@ -21,7 +21,7 @@
 }
 
 .texto__formulario-sm {
-    font-size: 9px;
+    font-size: 11px;
 }
 
 .form-check-label {
@@ -34,4 +34,27 @@
 
 .titulo-form {
     margin-bottom: 10px;
+}
+
+.radio-wrapper input[type="radio"] {
+    appearance: none;
+
+    border: 1px solid black;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.radio-wrapper input[type="radio"]:checked {
+    background-image: radial-gradient(white 35%, rgb(0, 132, 255) 40%);
+    border: rgb(0, 132, 255);
+}
+
+.radio-wrapper > div {
+    display: block;
+    gap: .8rem;
+    padding-left: .8rem;
+}
+
+.radio-wrapper:not(:has(:checked)) {
+    opacity: .6;
 }
