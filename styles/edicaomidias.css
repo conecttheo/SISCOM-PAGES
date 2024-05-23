@@ -15,3 +15,7 @@
 .texto__lista {
     padding: 2px 300px;
 }
+
+.textarea-left::placeholder {
+    text-align: start;
+}

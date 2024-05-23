@@ -43,10 +43,10 @@
                     <tr>
                         <th scope="row">1</th>
                         <td>Reportagem</td>
-                        <td>João do Carmo</td>
+                        <td>VERSÃO GABINETE</td>
                         <td>15/08/2024</td>
                         <td>Pendente</td>
-                        <td><a href="#!">
+                        <td><a href="#!" data-bs-toggle="modal" data-bs-target="#modalGab" data-bs-whatever="@mdo">
                                 <i class="bi bi-pencil-fill"></i></a></td>
                         <td>
                             <a href="#!" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -57,11 +57,11 @@
                     <tr>
                         <th scope="row">2</th>
                         <td>Reportagem</td>
-                        <td>Eliseu Silva</td>
+                        <td>VERSÃO ADM</td>
                         <td>05/04/2024</td>
                         <td>Deferido</td>
                         <td>
-                            <a href="#!">
+                            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalAdm" data-bs-whatever="@mdo">
                                 <i class="bi bi-pencil-fill"></i>
                             </a>
                         </td>
@@ -101,6 +101,125 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Não</button>
                 <button type="button" class="btn btn-danger">Sim</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal editar Gabinete -->
+<div class="modal fade" id="modalGab" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Editar protocolo</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="mb-3 col-4">
+                            <label for="recipient-name" class="form-label h6">Assessor</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3 col-4">
+                            <label for="recipient-name" class="form-label h6">Vereador</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3 col-4">
+                            <label for="recipient-name" class="form-label h6">Vinculação</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="message-text" class="form-label h6">Descrição da reportagem</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="message-text" class="form-label h6">Descrição do propósito de uso</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="message-text" class="form-label h6">Nomes e contatos</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Editar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal editar foto ADM -->
+<div class="modal fade" id="modalAdm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Editar protocolo</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="mb-3 col-4">
+                            <label for="recipient-name" class="form-label h6">Assessor</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3 col-4">
+                            <label for="recipient-name" class="form-label h6">Vereador</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3 col-4">
+                            <label for="recipient-name" class="form-label h6">Vinculação</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="message-text" class="form-label h6">Descrição da reportagem</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="message-text" class="form-label h6">Descrição do propósito de uso</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="message-text" class="form-label h6">Nomes e contatos</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-5">
+                            <label for="exampleFormControlInput1" class="form-label h6">Status</label>
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Pendente</option>
+                                <option value="1">Deferido</option>
+                                <option value="2">Indeferido</option>
+                                <option value="3">Parcialmente Deferido</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-7">
+                            <label for="exampleFormControlTextarea1" class="form-label h6">Observação do Status</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Editar</button>
             </div>
         </div>
     </div>
