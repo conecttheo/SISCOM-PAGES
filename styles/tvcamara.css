@@ -24,6 +24,7 @@
     color: var(--branco);
     font-family: var(--fonte-1);
 }
+
 h4 {
     margin-left: 1rem;
 }
@@ -38,8 +39,11 @@ h4 {
 .card9 { grid-area: 2 / 4 / 3 / 5; }
 .card10 { grid-area: 2 / 5 / 3 / 6; }
 
-.card:hover{
+.card:hover {
     transition : 545ms;
     transform : translateY(-8px);
-    
+}
+
+.icone-card {
+    width: 30%;
 }

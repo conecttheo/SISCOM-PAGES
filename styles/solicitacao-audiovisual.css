@@ -1,0 +1,36 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    }
+
+.card-reportagem {
+    background: var(--gradiente-card);
+    padding: 10px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-card {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--branco);
+    font-family: var(--fonte-1);
+}
+    
+.card_1 { grid-area: 1 / 1 / 2 / 2; }
+.card_2 { grid-area: 1 / 2 / 2 / 3; }
+.card_3 { grid-area: 1 / 3 / 2 / 4; }
+.card_4 { grid-area: 1 / 4 / 2 / 5; }
+.card_5 { grid-area: 1 / 5 / 2 / 6; }
+
+.card-reportagem:hover {
+    transition : 545ms;
+    transform : translateY(-8px);
+}

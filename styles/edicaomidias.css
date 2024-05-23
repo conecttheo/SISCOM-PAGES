@@ -11,3 +11,7 @@
     color: var(--vermelho-escuro);
     font-weight: 500;
 }
+
+.texto__lista {
+    padding: 2px 300px;
+}
