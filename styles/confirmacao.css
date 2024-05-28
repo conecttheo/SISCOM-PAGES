@@ -58,3 +58,10 @@
 .radio-wrapper:not(:has(:checked)) {
     opacity: .6;
 }
+
+.box__formulario {
+    background-color: #397e9d;
+    color: var(--branco);
+    padding: .25rem;
+    border-radius: 12px;
+}
