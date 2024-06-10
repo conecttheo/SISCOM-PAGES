@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/edicaomidias.css">
+    <link rel="shortcut icon" type="image/jpg" href="/ASSETS/img/logo_camara_icon.png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <title>SICom - Formulário de Solicitação de edição</title>
+</head>
+
+<body>
+    <div class="container">
+        <section id="corpo">
+            <h2 class="titulo-home mt-4">
+                Sistema Interno - Secretaria de Comunicação
+                <br>Câmara Municipal de Jacareí-SP
+            </h2>
+            <h3 class="sub-titulo-red">AUXÍLIO PARA SOLICITAÇÃO DE EDIÇÃO DE MÍDIAS</h3>
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label h6">NOME DO ASSESSOR(A)</label>
+                        <input type="text" class="form-control shadow bg-body-tertiary rounded border border-secondary"
+                            id="exampleFormControlInput1">
+                    </div>
+
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label h6">PROPÓSITO DE USO</label>
+                        <select class="form-select shadow bg-body-tertiary rounded border border-secondary"
+                            id="floatingSelect" aria-label="Floating label select example">
+                            <option selected></option>
+                            <option value="1">Sessão Ordinária</option>
+                            <option value="2">Sessão Solene</option>
+                            <option value="3">Audiência Pública</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label h6">NOME DO ARQUIVO</label>
+                        <input type="text" class="form-control shadow bg-body-tertiary rounded border border-secondary"
+                            id="exampleFormControlInput1">
+                    </div>
+
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label h6">DATA A SER UTILIZADO</label>
+                        <input type="date" class="form-control shadow bg-body-tertiary rounded border border-secondary"
+                            id="exampleFormControlInput1">
+                    </div>
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label h6">TIPO DE MÍDIA</label>
+                        <select class="form-select shadow bg-body-tertiary rounded border border-secondary"
+                            id="floatingSelect" aria-label="Floating label select example">
+                            <option selected></option>
+                            <option value="1">Vídeo</option>
+                            <option value="2">Aúdio</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mt-4 container text-center">
+                    <label for="exampleFormControlTextarea1" class="form-label h6">DESCREVA ABAIXO, DETALHADAMENTE, A
+                        EDIÇÃO A REALIZAR NA MÍDIA</label>
+                    <br>
+                    <textarea class="form-control shadow bg-body-tertiary rounded border border-secondary textarea-left"
+                    id="exampleFormControlTextarea1" rows="5" placeholder="Exemplos: 
+                    1- Retire o aúdio do vídeo 
+                    2- Realize o corte para utilização do tempo de “3 minutos e 30 segundos até 4 minutos de 05 segundos”. 
+                    3- Coloque a identificação na pessoa que aparece no tempo de 2 minutos e 3 segundos, com o nome de João da Silva, Estudante. 
+                    4- Aumentar o volume da Entrevista que ocorre no tempo de 4 minutos e 50 segundos."></textarea>
+                </div>
+
+                <a href="#">
+                    <button type="button" class="btn btn-danger mt-3">Enviar</button></a>
+
+                <div class="icones">
+                    <div class="icone">
+                        <a href="/Pages/TV-Camara/13-edicaomidias-atencaoGAB.html"><img src="/ASSETS/img/VOLTAR_ICON.png" title="Voltar"></a>
+                        <p class="textos-home">Voltar</p>
+                    </div>
+                    <div class="icone">
+                        <a href="/Pages/index.html"><img src="/ASSETS/img/SAIR_ICON.png" title="Sair"></a>
+                        <p class="textos-home">Sair</p>
+                    </div>
+                </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
