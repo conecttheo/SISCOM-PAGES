@@ -125,6 +125,11 @@ textarea::placeholder {
     text-align: center;
 }
 
+.link-container {
+    flex-grow: 1;
+    text-align: center;
+}
+
 
 @media screen and (min-width:1024px) {
 
