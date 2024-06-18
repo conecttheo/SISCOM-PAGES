@@ -75,7 +75,18 @@ body {
     text-transform: uppercase;
     margin: 20px 30px 30px;
     text-decoration: none;
-    }
+}
+
+.botao-desativado {
+    padding: 30px 60px;
+    margin: 20px 30px 30px;
+    font-family: var(--fonte-1);
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--branco);
+    box-shadow: rgb(0, 0, 0) 2px 3px 4px 1px;
+    border-radius: 23px;
+}
 
 .botao-opcoes:hover {
     transition : 694ms;
