@@ -91,7 +91,6 @@ body {
 .botao-opcoes:hover {
     transition : 694ms;
     transform : translateY(-5px);
-    color: #000;
 }
 
 .icones {
