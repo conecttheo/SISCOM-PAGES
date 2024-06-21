@@ -44,7 +44,7 @@
                     <tr>
                         <th scope="row">1</th>
                         <td>Foto</td>
-                        <td>Otto silva</td>
+                        <td>VERSÃO GABINETE</td>
                         <td>Abner Rosa</td>
                         <td>15/08/2024</td>
                         <td>Pendente</td>
@@ -59,12 +59,12 @@
                     <tr>
                         <th scope="row">2</th>
                         <td>Foto</td>
-                        <td>Otto silva</td>
+                        <td>VERSÃO ADM</td>
                         <td>Roninha</td>
                         <td>05/04/2024</td>
-                        <td>Pendente</td>
+                        <td>Deferido</td>
                         <td>
-                            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalGab" data-bs-whatever="@mdo">
+                            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalAdm" data-bs-whatever="@mdo">
                                 <i class="bi bi-pencil-fill"></i>
                             </a>
                         </td>
@@ -85,7 +85,8 @@
                 <p class="textos-home">Voltar</p>
             </div>
             <div class="icone">
-                <a href="../Pages/13-edicaomidias-atencaoGAB.html"><img src="../ASSETS/img/NOVO-DOCUMENTO.png" class="icone-doc" title="Novo documento"></a>
+                <a href="../Pages/13-edicaomidias-atencaoGAB.html"><img src="../ASSETS/img/NOVO-DOCUMENTO.png"
+                        class="icone-doc" title="Novo documento"></a>
                 <p class="textos-home texto-doc">Novo<br>Protocolo</p>
             </div>
             <div class="icone">
@@ -130,7 +131,11 @@
                         </div>
                         <div class="mb-3 col-7">
                             <label for="recipient-name" class="form-label h6">Propósito de uso</label>
-                            <input type="text" class="form-control" id="recipient-name">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Sessão Ordinária</option>
+                                <option value="2">Audiência Pública</option>
+                                <option value="3">Sessão Solene</option>
+                            </select>
                         </div>
                     </div>
                     <div class="row">
@@ -143,8 +148,11 @@
                             <input type="date" class="form-control" id="exampleFormControlInput1">
                         </div>
                         <div class="col">
-                            <label for="exampleFormControlInput1" class="form-label h6">Tipo de mídia</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                            <label for="recipient-name" class="form-label h6">Tipo de mídia</label>
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Vídeo</option>
+                                <option value="2">Foto</option>
+                            </select>
                         </div>
                     </div>
                     <div class="mb-3">
@@ -161,5 +169,75 @@
     </div>
 </div>
 
+<!-- modal editar ADM -->
+<div class="modal fade" id="modalAdm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Editar protocolo</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="mb-3 col-5">
+                            <label for="recipient-name" class="form-label h6">Assessor</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3 col-7">
+                            <label for="recipient-name" class="form-label h6">Propósito de uso</label>
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Sessão Ordinária</option>
+                                <option value="2">Audiência Pública</option>
+                                <option value="3">Sessão Solene</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleFormControlInput1" class="form-label h6">Arquivo</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="col">
+                            <label for="exampleFormControlInput1" class="form-label h6">Data</label>
+                            <input type="date" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="col">
+                            <label for="recipient-name" class="form-label h6">Tipo de mídia</label>
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Vídeo</option>
+                                <option value="2">Foto</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="form-label h6">Descrição</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-5">
+                                <label for="exampleFormControlInput1" class="form-label h6">Status</label>
+                                <select class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option selected>Pendente</option>
+                                    <option value="1">Deferido</option>
+                                    <option value="2">Indeferido</option>
+                                    <option value="3">Parcialmente Deferido</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 col-7">
+                                <label for="exampleFormControlTextarea1" class="form-label h6">Observação do
+                                    Status</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                            </div>
+                        </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Editar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </html>
