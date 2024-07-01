@@ -71,6 +71,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
     text-transform: uppercase;
     margin: 20px 30px 30px;
@@ -115,6 +116,10 @@ body {
     font-weight: 800;
     font-size: 35px;
     color: var(--azul-2);
+}
+
+.small_text {
+    font-size: 15px;
 }
 
 .icone:hover{
